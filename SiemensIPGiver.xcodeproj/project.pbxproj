@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		376A3FAA2FAB8C1200F22B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 376A3F922FAB8C1100F22B77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 376A3F992FAB8C1100F22B77;
+			remoteInfo = SiemensIPGiver;
+		};
+		376A3FB42FAB8C1200F22B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 376A3F922FAB8C1100F22B77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 376A3F992FAB8C1100F22B77;
+			remoteInfo = SiemensIPGiver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		376A3F9A2FAB8C1100F22B77 /* SiemensIPGiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiemensIPGiver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		376A3FA92FAB8C1200F22B77 /* SiemensIPGiverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiemensIPGiverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		376A3FB32FAB8C1200F22B77 /* SiemensIPGiverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiemensIPGiverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		376A3F9C2FAB8C1100F22B77 /* SiemensIPGiver */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SiemensIPGiver;
+			sourceTree = "<group>";
+		};
+		376A3FAC2FAB8C1200F22B77 /* SiemensIPGiverTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SiemensIPGiverTests;
+			sourceTree = "<group>";
+		};
+		376A3FB62FAB8C1200F22B77 /* SiemensIPGiverUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SiemensIPGiverUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		376A3F972FAB8C1100F22B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376A3FA62FAB8C1200F22B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376A3FB02FAB8C1200F22B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		376A3F912FAB8C1100F22B77 = {
+			isa = PBXGroup;
+			children = (
+				376A3F9C2FAB8C1100F22B77 /* SiemensIPGiver */,
+				376A3FAC2FAB8C1200F22B77 /* SiemensIPGiverTests */,
+				376A3FB62FAB8C1200F22B77 /* SiemensIPGiverUITests */,
+				376A3F9B2FAB8C1100F22B77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		376A3F9B2FAB8C1100F22B77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				376A3F9A2FAB8C1100F22B77 /* SiemensIPGiver.app */,
+				376A3FA92FAB8C1200F22B77 /* SiemensIPGiverTests.xctest */,
+				376A3FB32FAB8C1200F22B77 /* SiemensIPGiverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		376A3F992FAB8C1100F22B77 /* SiemensIPGiver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 376A3FBD2FAB8C1200F22B77 /* Build configuration list for PBXNativeTarget "SiemensIPGiver" */;
+			buildPhases = (
+				376A3F962FAB8C1100F22B77 /* Sources */,
+				376A3F972FAB8C1100F22B77 /* Frameworks */,
+				376A3F982FAB8C1100F22B77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				376A3F9C2FAB8C1100F22B77 /* SiemensIPGiver */,
+			);
+			name = SiemensIPGiver;
+			packageProductDependencies = (
+			);
+			productName = SiemensIPGiver;
+			productReference = 376A3F9A2FAB8C1100F22B77 /* SiemensIPGiver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		376A3FA82FAB8C1200F22B77 /* SiemensIPGiverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 376A3FC02FAB8C1200F22B77 /* Build configuration list for PBXNativeTarget "SiemensIPGiverTests" */;
+			buildPhases = (
+				376A3FA52FAB8C1200F22B77 /* Sources */,
+				376A3FA62FAB8C1200F22B77 /* Frameworks */,
+				376A3FA72FAB8C1200F22B77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				376A3FAB2FAB8C1200F22B77 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				376A3FAC2FAB8C1200F22B77 /* SiemensIPGiverTests */,
+			);
+			name = SiemensIPGiverTests;
+			packageProductDependencies = (
+			);
+			productName = SiemensIPGiverTests;
+			productReference = 376A3FA92FAB8C1200F22B77 /* SiemensIPGiverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		376A3FB22FAB8C1200F22B77 /* SiemensIPGiverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 376A3FC32FAB8C1200F22B77 /* Build configuration list for PBXNativeTarget "SiemensIPGiverUITests" */;
+			buildPhases = (
+				376A3FAF2FAB8C1200F22B77 /* Sources */,
+				376A3FB02FAB8C1200F22B77 /* Frameworks */,
+				376A3FB12FAB8C1200F22B77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				376A3FB52FAB8C1200F22B77 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				376A3FB62FAB8C1200F22B77 /* SiemensIPGiverUITests */,
+			);
+			name = SiemensIPGiverUITests;
+			packageProductDependencies = (
+			);
+			productName = SiemensIPGiverUITests;
+			productReference = 376A3FB32FAB8C1200F22B77 /* SiemensIPGiverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		376A3F922FAB8C1100F22B77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					376A3F992FAB8C1100F22B77 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					376A3FA82FAB8C1200F22B77 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 376A3F992FAB8C1100F22B77;
+					};
+					376A3FB22FAB8C1200F22B77 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 376A3F992FAB8C1100F22B77;
+					};
+				};
+			};
+			buildConfigurationList = 376A3F952FAB8C1100F22B77 /* Build configuration list for PBXProject "SiemensIPGiver" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 376A3F912FAB8C1100F22B77;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 376A3F9B2FAB8C1100F22B77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				376A3F992FAB8C1100F22B77 /* SiemensIPGiver */,
+				376A3FA82FAB8C1200F22B77 /* SiemensIPGiverTests */,
+				376A3FB22FAB8C1200F22B77 /* SiemensIPGiverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		376A3F982FAB8C1100F22B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376A3FA72FAB8C1200F22B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376A3FB12FAB8C1200F22B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		376A3F962FAB8C1100F22B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376A3FA52FAB8C1200F22B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376A3FAF2FAB8C1200F22B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		376A3FAB2FAB8C1200F22B77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 376A3F992FAB8C1100F22B77 /* SiemensIPGiver */;
+			targetProxy = 376A3FAA2FAB8C1200F22B77 /* PBXContainerItemProxy */;
+		};
+		376A3FB52FAB8C1200F22B77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 376A3F992FAB8C1100F22B77 /* SiemensIPGiver */;
+			targetProxy = 376A3FB42FAB8C1200F22B77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		376A3FBB2FAB8C1200F22B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5UAM478N24;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		376A3FBC2FAB8C1200F22B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5UAM478N24;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		376A3FBE2FAB8C1200F22B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5UAM478N24;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmaendel.SiemensIPGiver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		376A3FBF2FAB8C1200F22B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5UAM478N24;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmaendel.SiemensIPGiver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		376A3FC12FAB8C1200F22B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5UAM478N24;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmaendel.SiemensIPGiverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiemensIPGiver.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SiemensIPGiver";
+			};
+			name = Debug;
+		};
+		376A3FC22FAB8C1200F22B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5UAM478N24;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmaendel.SiemensIPGiverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiemensIPGiver.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SiemensIPGiver";
+			};
+			name = Release;
+		};
+		376A3FC42FAB8C1200F22B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5UAM478N24;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmaendel.SiemensIPGiverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SiemensIPGiver;
+			};
+			name = Debug;
+		};
+		376A3FC52FAB8C1200F22B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5UAM478N24;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmaendel.SiemensIPGiverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SiemensIPGiver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		376A3F952FAB8C1100F22B77 /* Build configuration list for PBXProject "SiemensIPGiver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376A3FBB2FAB8C1200F22B77 /* Debug */,
+				376A3FBC2FAB8C1200F22B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		376A3FBD2FAB8C1200F22B77 /* Build configuration list for PBXNativeTarget "SiemensIPGiver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376A3FBE2FAB8C1200F22B77 /* Debug */,
+				376A3FBF2FAB8C1200F22B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		376A3FC02FAB8C1200F22B77 /* Build configuration list for PBXNativeTarget "SiemensIPGiverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376A3FC12FAB8C1200F22B77 /* Debug */,
+				376A3FC22FAB8C1200F22B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		376A3FC32FAB8C1200F22B77 /* Build configuration list for PBXNativeTarget "SiemensIPGiverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376A3FC42FAB8C1200F22B77 /* Debug */,
+				376A3FC52FAB8C1200F22B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 376A3F922FAB8C1100F22B77 /* Project object */;
+}
