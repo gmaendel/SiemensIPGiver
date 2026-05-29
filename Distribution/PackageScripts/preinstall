@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+
+BPF_DAEMON="/Library/LaunchDaemons/com.gmaendel.SiemensIPGiver.bpf.plist"
+
+if [ -f "${BPF_DAEMON}" ]; then
+	/bin/launchctl bootout system "${BPF_DAEMON}" >/dev/null 2>&1 || true
+fi
+
+exit 0

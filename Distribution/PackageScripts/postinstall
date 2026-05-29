@@ -1,0 +1,27 @@
+#!/bin/sh
+set -eu
+
+BPF_GROUP="siemensipgiver-bpf"
+BPF_SCRIPT="/Library/Application Support/SiemensIPGiver/SiemensIPGiverBPFSetup.sh"
+BPF_DAEMON="/Library/LaunchDaemons/com.gmaendel.SiemensIPGiver.bpf.plist"
+
+if ! /usr/bin/dscl . -read "/Groups/${BPF_GROUP}" >/dev/null 2>&1; then
+	/usr/sbin/dseditgroup -q -o create "${BPF_GROUP}"
+fi
+
+CONSOLE_USER=$(/usr/bin/stat -f %Su /dev/console)
+if [ "${CONSOLE_USER}" != "root" ]; then
+	/usr/sbin/dseditgroup -q -o edit -a "${CONSOLE_USER}" -t user "${BPF_GROUP}"
+fi
+
+/usr/sbin/chown root:wheel "${BPF_SCRIPT}"
+/bin/chmod 755 "${BPF_SCRIPT}"
+
+/usr/sbin/chown root:wheel "${BPF_DAEMON}"
+/bin/chmod 644 "${BPF_DAEMON}"
+
+/bin/launchctl bootout system "${BPF_DAEMON}" >/dev/null 2>&1 || true
+/bin/launchctl bootstrap system "${BPF_DAEMON}"
+/bin/launchctl kickstart -k "system/com.gmaendel.SiemensIPGiver.bpf"
+
+exit 0
