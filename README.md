@@ -4,6 +4,8 @@ SiemensIPGiver is a macOS utility for finding Siemens PLCs on a local network an
 
 The app is intended for commissioning and maintenance workflows where a Siemens PLC is reachable on the local Ethernet segment but does not yet have the correct IP address.
 
+![SiemensIPGiver macOS app screenshot](Documentation/siemensipgiver-screenshot.png)
+
 ## Features
 
 - Discover Siemens PLCs on the local network.
