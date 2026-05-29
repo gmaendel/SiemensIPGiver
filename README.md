@@ -23,15 +23,22 @@ PLC discovery and IP assignment use local network access. For PLCs without an IP
 
 ## User Installation
 
-Distribute the signed and notarized package:
+Download or distribute the signed and notarized package:
 
 ```text
-build/ReleaseDistribution/SiemensIPGiver-signed.pkg
+Distribution/Installer/SiemensIPGiver-signed.pkg
 ```
 
 The installer places the app in `/Applications` and installs a LaunchDaemon that grants the local app group access to `/dev/bpf*`.
 
 After installation, users may need to log out and back in if group membership changes do not apply immediately.
+
+To verify the downloaded installer:
+
+```sh
+shasum -a 256 -c Distribution/Installer/SiemensIPGiver-signed.pkg.sha256
+spctl --assess --type install --verbose=4 Distribution/Installer/SiemensIPGiver-signed.pkg
+```
 
 ## Development Build
 

@@ -45,3 +45,17 @@ Then build, sign, notarize, and staple:
 ```sh
 NOTARY_PROFILE=SiemensIPGiverNotary Distribution/build-release.sh
 ```
+
+## Installer Artifact
+
+The current signed and notarized installer is checked in at:
+
+```text
+Distribution/Installer/SiemensIPGiver-signed.pkg
+```
+
+Its SHA-256 checksum is checked in at:
+
+```text
+Distribution/Installer/SiemensIPGiver-signed.pkg.sha256
+```
