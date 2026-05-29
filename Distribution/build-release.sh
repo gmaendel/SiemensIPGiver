@@ -10,8 +10,18 @@ COMPONENT_PKG="${BUILD_DIR}/SiemensIPGiver-component.pkg"
 FINAL_PKG="${BUILD_DIR}/SiemensIPGiver.pkg"
 SIGNED_PKG="${BUILD_DIR}/SiemensIPGiver-signed.pkg"
 NOTARY_PROFILE="${NOTARY_PROFILE:-}"
+DEVELOPMENT_TEAM_ID="${DEVELOPMENT_TEAM_ID:-}"
+DEVELOPER_ID_INSTALLER="${DEVELOPER_ID_INSTALLER:-}"
 
-DEVELOPER_ID_INSTALLER="Developer ID Installer: Rite Irrigation LLC (5UAM478N24)"
+if [ -z "${DEVELOPMENT_TEAM_ID}" ]; then
+	echo "error: DEVELOPMENT_TEAM_ID is required for a Developer ID release build."
+	echo "example: DEVELOPMENT_TEAM_ID=ABCDE12345 NOTARY_PROFILE=ProfileName Distribution/build-release.sh"
+	exit 1
+fi
+
+if [ -z "${DEVELOPER_ID_INSTALLER}" ]; then
+	DEVELOPER_ID_INSTALLER=$(security find-identity -v | /usr/bin/sed -n 's/.*"\(Developer ID Installer:.*\)"/\1/p' | /usr/bin/head -n 1)
+fi
 
 cd "${PROJECT_ROOT}"
 export COPYFILE_DISABLE=1
@@ -19,18 +29,40 @@ export COPYFILE_DISABLE=1
 /bin/rm -rf "${BUILD_DIR}"
 /bin/mkdir -p "${EXPORT_PATH}" "${PKG_ROOT}/Applications"
 
+EXPORT_OPTIONS_PLIST="${BUILD_DIR}/DeveloperIDExportOptions.plist"
+/bin/cat > "${EXPORT_OPTIONS_PLIST}" <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>destination</key>
+	<string>export</string>
+	<key>method</key>
+	<string>developer-id</string>
+	<key>signingCertificate</key>
+	<string>Developer ID Application</string>
+	<key>signingStyle</key>
+	<string>automatic</string>
+	<key>stripSwiftSymbols</key>
+	<true/>
+	<key>teamID</key>
+	<string>${DEVELOPMENT_TEAM_ID}</string>
+</dict>
+</plist>
+EOF
+
 xcodebuild archive \
 	-project SiemensIPGiver.xcodeproj \
 	-scheme SiemensIPGiver \
 	-configuration Release \
 	-destination "generic/platform=macOS" \
 	-archivePath "${ARCHIVE_PATH}" \
-	DEVELOPMENT_TEAM=5UAM478N24
+	DEVELOPMENT_TEAM="${DEVELOPMENT_TEAM_ID}"
 
 xcodebuild -exportArchive \
 	-archivePath "${ARCHIVE_PATH}" \
 	-exportPath "${EXPORT_PATH}" \
-	-exportOptionsPlist "${PROJECT_ROOT}/Distribution/ExportOptions/DeveloperIDExportOptions.plist"
+	-exportOptionsPlist "${EXPORT_OPTIONS_PLIST}"
 
 /bin/cp -R "${EXPORT_PATH}/SiemensIPGiver.app" "${PKG_ROOT}/Applications/"
 /bin/cp -R "${PROJECT_ROOT}/Distribution/PackageRoot/Library" "${PKG_ROOT}/"
@@ -45,7 +77,7 @@ pkgbuild \
 	--install-location / \
 	"${COMPONENT_PKG}"
 
-if security find-identity -v | /usr/bin/grep -q "${DEVELOPER_ID_INSTALLER}"; then
+if [ -n "${DEVELOPER_ID_INSTALLER}" ] && security find-identity -v | /usr/bin/grep -q "${DEVELOPER_ID_INSTALLER}"; then
 	productbuild \
 		--package "${COMPONENT_PKG}" \
 		--sign "${DEVELOPER_ID_INSTALLER}" \

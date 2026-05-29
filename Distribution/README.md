@@ -23,27 +23,38 @@ The script archives the app, exports a Developer ID signed `.app`, creates a `.p
 The app signing certificate must be available in the login keychain:
 
 ```text
-Developer ID Application: Rite Irrigation LLC (5UAM478N24)
+Developer ID Application: Your Company (YOUR_TEAM_ID)
 ```
 
 The installer signing certificate must also be available:
 
 ```text
-Developer ID Installer: Rite Irrigation LLC (5UAM478N24)
+Developer ID Installer: Your Company (YOUR_TEAM_ID)
 ```
 
 Create the notary keychain profile once:
 
 ```sh
-xcrun notarytool store-credentials SiemensIPGiverNotary \
+xcrun notarytool store-credentials YOUR_NOTARY_PROFILE \
   --apple-id "YOUR_APPLE_ID" \
-  --team-id 5UAM478N24
+  --team-id YOUR_TEAM_ID
 ```
 
 Then build, sign, notarize, and staple:
 
 ```sh
-NOTARY_PROFILE=SiemensIPGiverNotary Distribution/build-release.sh
+DEVELOPMENT_TEAM_ID=YOUR_TEAM_ID \
+NOTARY_PROFILE=YOUR_NOTARY_PROFILE \
+Distribution/build-release.sh
+```
+
+If multiple Developer ID Installer certificates are installed, pass the exact identity:
+
+```sh
+DEVELOPMENT_TEAM_ID=YOUR_TEAM_ID \
+DEVELOPER_ID_INSTALLER="Developer ID Installer: Your Company (YOUR_TEAM_ID)" \
+NOTARY_PROFILE=YOUR_NOTARY_PROFILE \
+Distribution/build-release.sh
 ```
 
 ## Installer Artifact

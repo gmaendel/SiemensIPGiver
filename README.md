@@ -63,14 +63,25 @@ The release packaging flow is in [Distribution](Distribution/README.md).
 
 Required local credentials:
 
-- `Developer ID Application: Rite Irrigation LLC (5UAM478N24)`
-- `Developer ID Installer: Rite Irrigation LLC (5UAM478N24)`
-- A `notarytool` keychain profile, for example `SiemensIPGiverNotary`
+- A `Developer ID Application` certificate for your Apple Developer team.
+- A `Developer ID Installer` certificate for your Apple Developer team.
+- A `notarytool` keychain profile.
 
 Build, sign, notarize, and staple the installer:
 
 ```sh
-NOTARY_PROFILE=SiemensIPGiverNotary Distribution/build-release.sh
+DEVELOPMENT_TEAM_ID=YOUR_TEAM_ID \
+NOTARY_PROFILE=YOUR_NOTARY_PROFILE \
+Distribution/build-release.sh
+```
+
+If your installer certificate name is ambiguous, pass it explicitly:
+
+```sh
+DEVELOPMENT_TEAM_ID=YOUR_TEAM_ID \
+DEVELOPER_ID_INSTALLER="Developer ID Installer: Your Company (YOUR_TEAM_ID)" \
+NOTARY_PROFILE=YOUR_NOTARY_PROFILE \
+Distribution/build-release.sh
 ```
 
 Verify the package before distribution:
